@@ -1,4 +1,7 @@
-sinfo -N -o "%N %t %C"
+sinfo -N -o "%N %t %C":
+#-N specifies that we want to list nodes.
+# -o "%N %t %C" customizes the output format,
+# where %N is for the node names, %t is for the node state, and %C is for the available CPUs.
 #the OUTPUT:
 # NODELIST STATE CPUS(A/I/O/T)
 # node01 alloc 40/0/0/40
